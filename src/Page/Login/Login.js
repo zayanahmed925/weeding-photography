@@ -37,7 +37,7 @@ const Login = () => {
                     Submit
                 </Button>
             </Form>
-            <p>New to Captured Moments? <Link to='/register' className='text-primary text-decoration-none'>Please Register</Link></p>
+            <p>New to Captured Moments? <Link to='/register' className='text-primary text-decoration-none' onClick={handleRegister}>Please Register</Link></p>
 
 
         </div>
