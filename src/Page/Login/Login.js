@@ -1,17 +1,30 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 import './Login.css';
+import SocialLogin from './SocialLogin/SocialLogin';
 const Login = () => {
     const emailRef = useRef('')
     const PasswordRef = useRef('')
     const navigate = useNavigate();
-
+    const location = useLocation();
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+    let from = location.state?.from?.pathname || "/";
+    if (user) {
+        navigate(from, { replace: true });
+    }
     const handleSubmit = (event) => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = PasswordRef.current.value;
-        console.log(email, password);
+        signInWithEmailAndPassword(email, password);
     }
     const handleRegister = () => {
         navigate('/register')
@@ -37,9 +50,9 @@ const Login = () => {
                     Submit
                 </Button>
             </Form>
-            <p>New to Captured Moments? <Link to='/register' className='text-primary text-decoration-none' onClick={handleRegister}>Please Register</Link></p>
+            <p className='my-3'>New to Captured Moments? <Link to='/register' className='text-primary text-decoration-none ' onClick={handleRegister}>Please Register</Link></p>
 
-
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
