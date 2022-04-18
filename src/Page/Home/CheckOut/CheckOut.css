@@ -3,12 +3,12 @@
     font-weight: 700;
 }
 
-.login-btn {
+.confirm-btn {
     background-color: darkslategrey;
     border-radius: 10px;
     border: none;
 }
 
-.login-btn:hover {
+.confirm-btn:hover {
     background-color: rgba(22, 129, 161, 0.747);
 }

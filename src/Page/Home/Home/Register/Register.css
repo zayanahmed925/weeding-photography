@@ -3,12 +3,12 @@
     font-weight: 700;
 }
 
-.login-btn {
+.register-btn {
     background-color: darkslategrey;
     border-radius: 10px;
     border: none;
 }
 
-.login-btn:hover {
+.register-btn:hover {
     background-color: rgba(22, 129, 161, 0.747);
 }

@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import './Register.css';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -33,7 +34,7 @@ const Register = () => {
     }
     return (
         <div className='container w-50 mx-auto'>
-            <h2 className='text-primary text-center mt-3'>Please Register</h2>
+            <h2 className='title text-center mt-3'>Please Register</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Your Name</Form.Label>
@@ -55,7 +56,7 @@ const Register = () => {
                     <Form.Control type="password" ref={passwordRef} placeholder="Password" required />
                 </Form.Group>
 
-                <Button className='px-5' variant="primary" type="submit">
+                <Button className='px-5 register-btn' variant="primary" type="submit">
                     Register
                 </Button>
             </Form>
