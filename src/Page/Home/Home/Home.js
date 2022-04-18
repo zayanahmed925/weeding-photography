@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 import Services from '../Services/Services';
-import Protfolio from './Protfolio/Protfolio';
+import Question from './Question/Question';
 
 const Home = () => {
     return (
@@ -9,7 +9,7 @@ const Home = () => {
 
             <Banner></Banner>
             <Services></Services>
-            <Protfolio></Protfolio>
+            <Question></Question>
         </div>
     );
 };

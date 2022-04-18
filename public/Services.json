@@ -1,23 +1,23 @@
 [
     {
         "id": 1,
-        "name": "Outdoor Photography",
-        "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/kD55Z8v/service1.jpg"
+        "name": "Indoor Photography",
+        "price": "$1100",
+        "description": "Unlimited photo and All edited digital image with best Quality. Two hours weeding coverage with professional photographer.",
+        "img": "https://i.ibb.co/2sW9V3j/1.jpg"
     },
     {
         "id": 2,
-        "name": "Indoor Photography",
-        "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/qMd5NYV/service2.jpg"
+        "name": "Outdoor Photography",
+        "price": "1300",
+        "description": "Unlimited photo and All edited digital image with best Quality. Four hours weeding coverage with professional photographer.",
+        "img": " https://i.ibb.co/GdHpGdL/2.jpg"
     },
     {
         "id": 3,
-        "name": "Couple Photography",
-        "price": "150",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/HCPb29F/service-3.jpg"
+        "name": "Pre & Post-Wedding Photography",
+        "price": "1200",
+        "description": "Unlimited photo and All edited digital image with best Quality. Four hours weeding coverage with professional photographer.",
+        "img": "https://i.ibb.co/5vbMDzz/3.jpg"
     }
 ]
