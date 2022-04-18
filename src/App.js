@@ -1,6 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import CheckOut from './Page/Home/CheckOut/CheckOut';
+import About from './Page/Home/Home/About/About';
+import Blogs from './Page/Home/Home/Blogs/Blogs';
 import Home from './Page/Home/Home/Home';
 import Register from './Page/Home/Home/Register/Register';
 import RequireAuth from './Page/Home/Home/RequireAuth/RequireAuth';
@@ -11,11 +13,14 @@ import NotFound from './Shared/NotFound/NotFound';
 
 function App() {
   return (
-    <div >
+    <div className='app' >
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/blog' element={<Blogs></Blogs>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
+
         {/* <Route path='/service/checkout/:serviceId' element={<CheckOut></CheckOut>}></Route> */}
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>

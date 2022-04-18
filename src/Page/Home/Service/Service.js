@@ -15,10 +15,10 @@ const Service = ({ service }) => {
             <div className="card "  >
                 <img src={img} className="card-img-top w-100" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">{name}</h5>
+                    <h5 className="card-title fw-bold">{name}</h5>
                     <p>Price: {price}</p>
                     <p className="card-text"><small>{description}</small></p>
-                    <Button onClick={() => handleCheckout(name, id)} className="btn btn-primary">Go somewhere</Button>
+                    <Button onClick={() => handleCheckout(name, id)} className="btn btn-primary d-block w-100 py-2 mx-auto">Book Now</Button>
                 </div>
             </div>
         </div>

@@ -8,6 +8,7 @@ const Protfolio = () => {
                 <div className="row">
                     <div className="col-lg-6 order-lg-last">
                         <div className="">
+
                             <img src="images/Question1.jpg" className="rounded-3 w-100 pb-3" alt="" />
                         </div>
                     </div>
