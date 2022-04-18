@@ -1,9 +1,17 @@
-/* .Banner-container {
-    min-height: 100vh;
-    background-image: url('../../../Image/banner3.jpeg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: 1;
+.carousel-title {
 
-} */
+    font-weight: 800;
+    font-size: 40px;
+    display: inline;
+    background-color: rgba(29, 54, 54, 0.884);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width:450px) {
+    .carousel-title {
+        display: none;
+
+    }
+}

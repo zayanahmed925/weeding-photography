@@ -1,14 +1,15 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../../firebase.init';
 import SocialLogin from '../../../Login/SocialLogin/SocialLogin';
 const Register = () => {
     const navigate = useNavigate();
-    const nameRef = useRef('')
-    const emailRef = useRef('')
-    const passwordRef = useRef('')
+    const nameRef = useRef('');
+    const emailRef = useRef('');
+    const passwordRef = useRef('');
+    const location = useLocation();
     const [
         createUserWithEmailAndPassword,
         user,
@@ -19,8 +20,9 @@ const Register = () => {
     const handleLogin = () => {
         navigate('/login')
     }
+    let from = location.state?.from?.pathname || "/";
     if (user) {
-        navigate('/home');
+        navigate(from, { replace: true });
     }
     const handleSubmit = (event) => {
         event.preventDefault();

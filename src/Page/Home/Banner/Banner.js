@@ -3,6 +3,7 @@ import { Carousel } from 'react-bootstrap';
 import banner1 from '../../../Image/banner1.jpg';
 import banner2 from '../../../Image/banner2.jpg';
 import banner3 from '../../../Image/banner3.jpeg';
+import './Banner.css'
 const Banner = () => {
     const [index, setIndex] = useState(0);
     const handleSelect = (selectedIndex, e) => {
@@ -17,8 +18,8 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3 className='carousel-title'>Captured Moment </h3><br />
+                    <p className='carousel-text'></p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -29,8 +30,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 className='carousel-title'>Captured Moment</h3><br />
+                    <p className='carousel-text'></p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -41,9 +42,9 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    <h3 className='carousel-title'>Captured Moment</h3><br />
+                    <p className='carousel-text'>
+
                     </p>
                 </Carousel.Caption>
             </Carousel.Item>
