@@ -15,8 +15,6 @@ Live site Link [Captured Moments](https://weeding-photography-d73f2.web.app/)
 
 ### Captured Moments use this Technology 
 
-- HTML
-- CSS
 - React
 - Firebase
 - React firebase hook
